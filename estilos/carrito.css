@@ -59,6 +59,18 @@ h1, h2, h3 {
     cursor: pointer;
     z-index: 999;
   }
+
+  #Pagar-toggle {
+    position: relative;
+    right: 0px;
+    padding: 10px 20px;
+    background-color: #0edc12;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    z-index: 999;
+    height: 40px;
+    top: 40px;
+  }
   
   #carrito-cerrar {
     font-size: 20px;
