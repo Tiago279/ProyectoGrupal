@@ -49,6 +49,7 @@ nav{
     line-height: 108px;
     width: 75%;
     color: #FFFFFF;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 .texto{
     font-family: sans-serif;
@@ -100,6 +101,11 @@ nav{
     justify-content: space-around;
 }
 
+.caja{
+    display: flex;
+    flex-direction: column;
+}
+
 .info{
     display: flex;
     width: 70%;
@@ -143,6 +149,18 @@ input[type="checkbox"]{
 
     .titulo{
         font-size: 2em;
+    }
+
+    .subtitulo{
+        font-size: 3em;
+    }
+
+    .texto{
+        font-size: 1.5em;
+    }
+
+    .contacto{
+        width: 85%;
     }
 
     input[type="checkbox"]{
