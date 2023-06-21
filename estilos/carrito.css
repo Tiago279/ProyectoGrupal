@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+  }
+  
+  /* Estilos para los productos */
+  .producto {
+        margin-bottom: 20px;
+        width: 14em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1em;
+        align-items: center;
+      }
+  
+  .producto img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .producto button {
+    margin-top: 10px;
+  }
+  
+  .carrito-container {
+    position: relative;
+  }
+  
+  #carrito {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-left: 1px solid #ccc;
+    box-sizing: border-box;
+    z-index: 999;
+  }
+  
+  #carrito.visible {
+    display: block;
+    z-index: 998;
+  }
+  
+  #carrito-toggle {
+    position: absolute;
+    right: 0px;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #carrito-cerrar {
+    font-size: 20px;
+    color: red;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
