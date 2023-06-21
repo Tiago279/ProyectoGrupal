@@ -2,6 +2,12 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
 .fondo{
     box-sizing: border-box;
 
@@ -119,104 +125,36 @@ body{
     border: 5px solid black;
 }
 
-.menu-navegacion {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .hamburguesa {
+.menudesplegable{
+    background-color: rgb(129, 200, 123);
+}
+
+input[type="checkbox"]{
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-  }
-  
-  .linea {
-    width: 100%;
-    height: 2px;
-    background-color: #000;
-    margin-bottom: 4px;
-  }
-  
-  .menu-desplegable {
-    display: flex;
-    list-style: none;
-  }
-  
-  .menu-desplegable li {
-    margin-right: 20px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .menu-navegacion {
-      justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+
+    .boton{
+            font-size: 1em;
+    padding: 5px;
+    line-height: 20px;
     }
-  
-    .hamburguesa {
-      display: flex;
+
+    .titulo{
+        font-size: 2em;
     }
-  
-    .menu-desplegable {
-      flex-direction: column;
-      align-items: center;
-      display: none;
+
+    input[type="checkbox"]{
+        display: block;
     }
-  
-    .menu-desplegable.show {
-      display: flex;
+
+    .menu nav {
+        display: none;
     }
-  
-    .menu-desplegable li {
-      margin-right: 0;
-      margin-bottom: 10px;
+
+    .menu input:checked ~ nav{
+        display:block;
+        background-color:rgb(129, 200, 123) ;
     }
-  }
-
-  #header {
-    margin:auto;
-    width:500px;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-ul, ol {
-    list-style:none;
-}
-
-.nav > li {
-    float:left;
-}
-
-.nav li a {
-    background-color:#000;
-    color:#fff;
-    text-decoration:none;
-    padding:10px 12px;
-    display:block;
-}
-
-.nav li a:hover {
-    background-color:#434343;
-}
-
-.nav li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
-}
-
-.nav li:hover > ul {
-    display:block;
-}
-
-.nav li ul li {
-    position:relative;
-}
-
-.nav li ul li ul {
-    right:-140px;
-    top:0px;
 }

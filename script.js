@@ -1,10 +1,10 @@
 
 var productosDisponibles = [
-  { id: 1, nombre: "Producto 1", precio: 10.99, imagen: "img/Leche vegana.jpg" },
-  { id: 2, nombre: "Producto 2", precio: 19.99, imagen: "img/Mayonesa Vegana.jpg" },
-  { id: 3, nombre: "Producto 2", precio: 19.99, imagen: "img/Queso vegano.jpg" },
-  { id: 4, nombre: "Producto 2", precio: 19.99, imagen: "img/Helado VEGANO.jpg" },
-  { id: 5, nombre: "Producto 2", precio: 19.99, imagen: "img/Chocolatada vegano.jpg" }
+  { id: 1, nombre: "Leche de coco", precio: 760, imagen: "img/Leche vegana.jpg" },
+  { id: 2, nombre: "Mayonesa vegana", precio: 1100, imagen: "img/Mayonesa Vegana.jpg" },
+  { id: 3, nombre: "Queso de Almendras", precio: 1600, imagen: "img/Queso vegano.jpg" },
+  { id: 4, nombre: "Helado Vegano", precio: 3200, imagen: "img/Helado VEGANO.jpg" },
+  { id: 5, nombre: "Chocolatada Vegana", precio: 980, imagen: "img/Chocolatada vegano.jpg" }
 ];
 
 var carritoProductos = [];
@@ -118,14 +118,4 @@ function cerrarCarrito() {
 
 mostrarProductos();
 mostrarCarrito();
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const botonHamburguesa = document.querySelector('.hamburguesa');
-  const menuDesplegable = document.querySelector('.menu-desplegable');
-
-  botonHamburguesa.addEventListener('click', function() {
-    menuDesplegable.classList.toggle('show');
-  });
-});
 
